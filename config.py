@@ -18,7 +18,7 @@ try:
     DATA_PATH: str = get_env_var('DATA_PATH')
 except RuntimeError:
     DATA_PATH = 'data'
-SOF_TOKEN: str = get_env_var('SOF_TOKEN')
+#SOF_TOKEN: str = get_env_var('SOF_TOKEN')
 
 if __name__ == '__main__':
 
