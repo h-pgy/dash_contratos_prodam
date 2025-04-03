@@ -14,7 +14,10 @@ def get_env_var(varname:str)->str:
     
 
 # Acesso às variáveis
-DATA_PATH: str = get_env_var('DATA_PATH')
+try:
+    DATA_PATH: str = get_env_var('DATA_PATH')
+except RuntimeError:
+    DATA_PATH = 'data'
 SOF_TOKEN: str = get_env_var('SOF_TOKEN')
 
 if __name__ == '__main__':
